@@ -1,0 +1,356 @@
+/*1.  CSS RESET*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*2. CLEARFIX*/
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+/*3. BORDER BOX*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*STYLES*/
+
+/*black = #2f1611*/
+
+body{
+	/*background-color: #E46C54;*/
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Montserrat', sans-serif;
+	color: #F4EFE9;
+}
+
+h5{
+	font-size: 131px;
+	font-weight: lighter;
+}
+
+p, li{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 22px;
+	line-height: 1.4;
+	padding-bottom: 19px;
+}
+
+/*.slim{
+	font-weight: 200;
+}*/
+
+
+header{
+	height: 100vh;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	background-color: #E46C54;
+}
+
+.title h1{
+	color: #2f1611;
+	font-size: 62px;
+	/*position: absolute;*/
+	width: 500px;
+	text-align: center;
+	top: -77px;
+	left: -101px;
+	line-height: 1.3;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+}
+
+.title h2{
+	color: #2f1611;
+	font-size: 20px;
+	/*position: absolute;*/
+	width: 500px;
+	text-align: center;
+/*	bottom: 57px;
+	left: -99px;*/
+	line-height: 1.3;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+}
+
+.title{
+	position: fixed;
+	top: calc(50% - 97px);
+	left: calc(50% - 250px);
+	color: #2f1611;
+	z-index: 5;
+}
+
+i.fa-plus{
+	font-size: 40px;
+    position: absolute;
+    top: 149px;
+    left: 134px;
+}
+
+header img{
+	width: 300px;
+	margin: 0 auto;
+}
+
+.wrapper{
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+h3{
+	font-size: 30px;
+	padding-bottom: 20px;
+	margin-left: 20px;
+}
+
+
+li{
+	list-style: inside;
+}
+
+code {
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+/*	line-height: 26.4px;*/
+}
+
+pre{
+	background-color: #e9755e;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+
+section{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: relative;
+	z-index: 11;
+}
+
+.start-block{
+	position: relative;
+	top: 26px;
+	z-index: 1;
+}
+
+.top-block{
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+}
+
+.angleRight{
+	-moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph; /*IE*/
+    filter: fliph; /*IE*/
+}
+
+.AngleTopFirst{
+/*	top: 49px;*/
+	z-index: 6;
+}
+
+.AngleTopSecond{
+/*	top: -75px;*/
+	bottom: -2px;
+    z-index: 5;
+}
+
+.AngleTopThird{
+	height: 236px;
+/*	top: -310px;*/
+	bottom: -4px;
+	z-index: 4;
+}
+
+.AngleTopRise{
+	height: 70vh;
+/*	top: -310px;*/
+	bottom: -30vh;
+	z-index: 4;
+}
+
+.AngleTopForth{
+	height: 336px;
+	z-index: 3;
+	bottom: -6px;
+}
+
+.AngleTopFifth{
+	height: 446px;
+	z-index: 2;
+	bottom: -8px;
+}
+
+.AngleTopSixth{
+	height: 546px;
+	z-index: 1;
+	bottom: -10px;
+}
+
+
+
+
+.orangeLeft {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph; /*IE*/
+    filter: fliph; /*IE*/
+}
+
+
+.howToRemove pre{
+	background-color: #e9e4de;
+	border-radius: 10px;
+	color: #2f1611;
+}
+
+.howToUseMobile, .howToRemoveMobile{
+	display: none;
+}
+
+.howToUseMobile a{
+	color: #F4EFE9;
+}
+
+.howToRemoveMobile a{
+	color: #E46C54;
+}
+
+.howToUse img, .howToUseMobile img{
+	border-radius: 10px;
+	margin-top: 15px;
+	max-width: 100%;
+}
+
+.howToUse{
+	background-color: #E46C54;
+}
+
+.howItWorks{
+	z-index: 9;
+}
+
+section{
+	z-index: 9;
+}
+
+.white{
+	background-color: white;
+}
+
+.howItWorks, .howToRemove, .howToRemoveMobile{
+	background-color: #F4EFE9;
+}
+
+.howItWorks h3, .howToRemove h3, .howToRemoveMobile h3{
+	color: #E46C54;
+}
+
+
+@media (max-width: 750px){
+	.title h1{
+		color: #2f1611;
+		font-size: 42px;
+		/*position: absolute;*/
+		width: 500px;
+		text-align: center;
+		top: -77px;
+		left: -101px;
+		line-height: 1.3;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 200;
+	}
+
+	.title h2{
+		color: #2f1611;
+	    font-size: 20px;
+	    margin-left: 99px;
+	    /* position: absolute; */
+	    width: 286px;
+	    left: 50;
+	    line-height: 1.3;
+	    font-family: 'Raleway', sans-serif;
+	    font-weight: 200;
+	}
+
+	.title{
+		position: fixed;
+		top: calc(50% - 97px);
+		left: calc(50% - 250px);
+		width: 200px;
+		color: #2f1611;
+		z-index: 5;
+	}
+
+	.howToUseMobile, .howToRemoveMobile{
+	display: block;
+	}
+
+	.howToUseMobile{
+		background-color: #E46C54;
+	}
+
+	.howToUse, .howToRemove{
+		display: none;
+	}
+
+
+}
